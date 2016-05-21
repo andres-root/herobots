@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% block title %} Herobots! {% endblock %}
+{% load staticfiles %}
+{% block content %}
+  <div class="wrapper">
+    <header>
+      <div class="row">
+        <img src="{% static "img/logo-0.png" %}">
+      </div>
+      <div class="row">
+        <div class="container">
+          <nav>
+            <ul>
+              <li>
+                <a href="#">home</a>
+              </li>
+              <li>
+                <a href="#">about</a>
+              </li>
+              <li>
+                <a href="#">media</a>
+              </li>
+              <li>
+                <a href="#">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="content">
+      <div class="row">
+        <div class="col-md-6 image">
+          <img src="{% static "img/turtle-0.png" %}">
+        </div>          
+        <div class="col-md-6 copy">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet libero luctus, pulvinar nulla at, pulvinar odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet diam at dolor lacinia ultricies vitae non nisi. Pellentesque fringilla tortor at libero placerat venenatis. Suspendisse quis dolor quis orci auctor mollis. Nullam suscipit lacus vel mi iaculis, pellentesque posuere arcu vulputate. Donec placerat rhoncus condimentum.</p>
+        </div>          
+      </div>
+      <div class="container">
+        <div class="row animation">
+        </div>
+      </div>
+    </section>
+    <section class="grid">
+      <div class="grid-sizer"></div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+        </div>
+    </section>
+  </div>
+  <footer>
+    <ul>
+      <li>
+        <a href="#">
+          <img src="{% static "img/fb.png" %}">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="{% static "img/tw.png" %}">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="{% static "img/go.png" %}">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="{% static "img/yo.png" %}">
+        </a>
+      </li>
+    </ul>
+    <p>Made with love in Bogotá</p>
+  </footer>
+{% endblock %}
