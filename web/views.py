@@ -1,9 +1,8 @@
-# from django.shortcuts import render
-from django.http import HttpResponse
-from django.template import loader
+# from django.http import HttpResponse
+from django.shortcuts import render
+# from django.template import loader
 
 
 def index(request):
-    template = loader.get_template('web/index.html')
-    context = {'message': 'testing!'}
-    return HttpResponse(template.render(context, request))
+    context = {'message': 'testing 2!'}
+    return render(request, 'web/index.html', context)
