@@ -8,12 +8,12 @@ body {
 }
 
 a {
-  color: $black-0;
 
   &:hover,
   &:visited,
   &:active,
   &:target {
+	color: $white-0;
     text-decoration: none;
   } 
 }
