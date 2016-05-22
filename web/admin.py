@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Preorder
+
+admin.site.register(Preorder)

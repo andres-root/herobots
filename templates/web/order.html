@@ -4,7 +4,8 @@
 {% block content %}
 <section class="orderform">
   <div class="row">
-      <form  method="post" class="col s12">
+      <form method="post" action="/process/" class="col s12">
+        {% csrf_token %}
         <div class="row">
           <div class="input-field col s6">
             <input id="first_name" type="text" name="first_name"class="validate">
@@ -17,7 +18,7 @@
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input disabled value="Caguama Sea Turtle" name="robot" id="disabled" type="text" class="validate">
+            <input value="Caguama Sea Turtle" name="robot" id="disabled" type="text" class="validate">
             <label for="disabled">Herobot</label>
           </div>
         </div>
