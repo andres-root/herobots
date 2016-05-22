@@ -1,0 +1,240 @@
+{% extends 'base.html' %}
+{% block title %} Herobots! {% endblock %}
+{% load staticfiles %}
+{% block content %}
+  <div class="wrapper">
+    <header>
+      <!-- <div class="row">
+        <img src="{% static "img/logo-0.png" %}">
+      </div> -->
+      <!-- <nav>
+        <ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">about</a>
+          </li>
+          <li>
+            <a href="#">media</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
+          </li>
+        </ul>
+      </nav> -->
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">
+            <img src="{% static "img/logo-light.png" %}">
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a class="waves-effect waves-light btn" href="/preorder/">Preorder</a></li>
+            <li><a href="/">ES</a></li>
+            <li><a href="/en">EN</a></li>
+            <li><a href="/fr/">FR</a></li>
+          </ul>
+        </div>
+        </nav>
+    </header>
+    <section class="hero">
+      <video autoplay>
+        <source src="{% static "video/sample.mp4" %}" type="video/mp4">
+      </video>
+    </section>
+    <section class="content">
+      <div class="row">         
+        <div class="col-md-6 image">
+          <img src="{% static "img/turtle-0.png" %}">
+        </div>
+        <div class="col-md-6 copy">
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card-panel teal">
+                <span class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non quam ut dui convallis condimentum. Vivamus consectetur, lorem et placerat semper, lorem massa blandit mauris, eu dignissim odio felis aliquam enim. Quisque cursus aliquam magna malesuada efficitur. Donec molestie mauris lectus, non consectetur velit ultrices in. In consectetur porta leo eu pretium. Integer tristique ligula vitae ex ullamcorper elementum. Cras vel interdum nisi. Mauris nec pretium erat.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>          
+      </div>
+    </section>
+    <section class="separator">
+    </section>
+    <section class="showcase">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 item">
+            <a href="#">
+              <img src="{% static "img/turtlewithputtext.png" %}">
+              <b class="copy">
+                <img src="{% static "img/textturtle.png" %}">
+              </b>
+            </a>
+          </div>
+          <div class="col-md-6 item">
+            <a href="#">
+              <img src="{% static "img/perezososintexto.png" %}">
+              <b class="copy"><img src="{% static "img/textoperezaso.png" %}"></b>
+            </a>
+          </div>
+          <div class="col-md-6 item">
+            <a href="#">
+              <img src="{% static "img/birdwithouttext.png" %}">
+              <b class="copy"><img src="{% static "img/textbird.png" %}"></b>
+            </a>
+          </div>
+          <div class="col-md-6 item">
+            <a href="#">
+              <img src="{% static "img/plantswithouttext.png" %}">
+              <b class="copy"><img src="{% static "img/textoplantas.png" %}"></b>
+            </a>
+          </div>
+        </div>
+    </section>
+    <section class="environment">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="{% static "img/aminta.jpg" %}">
+              <span class="card-title">Aminta</span>
+            </div>
+            <div class="card-content">
+              <p>Lorem Ipsum dolor sit amet</p>
+            </div>
+            <div class="card-action">
+              <a href="#">More Info</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <!-- <img src="{% static "img/turtle-1.jpg" %}"> -->
+              <iframe src="https://player.vimeo.com/video/167587585" width="640" height="323" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <span class="card-title">The life cycle</span>
+            </div>
+            <div class="card-content">
+              <p>Lorem Ipsum dolor sit amet</p>
+            </div>
+            <div class="card-action">
+              <a href="#">More Info</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+          <!-- <div class="col-md-6 item">
+            <img class="img-circle" src="{% static "img/aminta.jpg" %}">
+          </div>
+          <div class="col-md-6 item">
+            <img class="img-circle" src="{% static "img/turtle-1.jpg" %}">
+          </div> -->
+    </section>
+
+    <section class="order">
+      <img src="{% static "img/logo.gif" %}">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non quam ut dui convallis condimentum. Vivamus consectetur, lorem et placerat semper, lorem massa blandit mauris, eu dignissim odio felis aliquam enim. Quisque cursus aliquam magna malesuada efficitur.</p>
+      <a class="waves-effect waves-light btn-large" href="preorder">Preorder</a>
+      <!-- <form method="post" action="order">
+        <label for="name">Name: </label>
+        <input type="text" name="name">
+        <label for="name">Name: </label>
+        <select name="species">
+          <option value="turtle">Turtle</option>
+        </select>
+        <label for="animalname">Animalname: </label>
+        <input type="text" name="animalname">
+        <label for="email">Animalname: </label>
+        <input type="email" name="email">
+        <label for="phone">Animalname: </label>
+        <input type="text" name="phone">
+      </form> -->
+    </section>
+    <section class="grid">
+      <div class="grid-sizer"></div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+        </div>
+        <div class="grid-item">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+        </div>
+    </section>
+  </div>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Bio-Inspiration</h5>
+          <p class="grey-text text-lighten-4">We made this project with love from Bogotá, Colombia.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Follow Us</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2014 Copyright Herobots Inc.
+      <a class="grey-text text-lighten-4 right" href="#!">Licence</a>
+      </div>
+    </div>
+  </footer>
+  <!-- <footer>
+    <ul>
+      <li>
+        <a href="#">
+          <img src="{% static "img/fb.png" %}">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="{% static "img/tw.png" %}">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="{% static "img/go.png" %}">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="{% static "img/yo.png" %}">
+        </a>
+      </li>
+    </ul>
+    <p>Made with love in Bogotá</p>
+  </footer> -->
+{% endblock %}
