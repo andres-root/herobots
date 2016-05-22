@@ -10,9 +10,29 @@ def index(request):
     return render(request, 'web/index.html', context)
 
 
+def index_en(request):
+    context = {}
+    return render(request, 'web/en/index.html', context)
+
+
+def index_fr(request):
+    context = {}
+    return render(request, 'web/fr/index.html', context)
+
+
 def order(request):
     context = {}
     return render(request, 'web/order.html', context)
+
+
+def order_en(request):
+    context = {}
+    return render(request, 'web/en/order.html', context)
+
+
+def order_fr(request):
+    context = {}
+    return render(request, 'web/fr/order.html', context)
 
 
 def process(request):
