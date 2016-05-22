@@ -4,5 +4,10 @@ from django.shortcuts import render
 
 
 def index(request):
-    context = {'message': 'testing 2!'}
+    context = {}
     return render(request, 'web/index.html', context)
+
+
+def order(request):
+    context = {}
+    return render(request, 'web/order.html', context)
