@@ -3,6 +3,11 @@
 {% load staticfiles %}
 {% block content %}
   <div class="wrapper">
+  {% if request.GET.success %}
+    <div class="alert alert-success">
+      <strong>Success!</strong> Indicates a successful or positive action.
+    </div>
+  {% endif %}
     <header>
       <!-- <div class="row">
         <img src="{% static "img/logo-0.png" %}">
@@ -29,10 +34,10 @@
             <img src="{% static "img/logo-light.png" %}">
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Inspiration</a></li>
-            <li><a class="waves-effect waves-light btn" href="/preorder/">Preorder</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#showcae">Products</a></li>
+            <li><a href="#inspiration">Inspiration</a></li>
+            <li><a class="waves-effect waves-light btn" href="/en/preorder/">Preorder</a></li>
             <li><a href="/">ES</a></li>
             <li><a href="/en">EN</a></li>
             <li><a href="/fr/">FR</a></li>

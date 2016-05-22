@@ -40,6 +40,6 @@ def process(request):
         form = PreorderForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/')
+            return HttpResponseRedirect('/?success=true')
         else:
             return HttpResponseRedirect('/')
