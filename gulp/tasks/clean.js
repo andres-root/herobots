@@ -6,5 +6,6 @@ var config = require('../config');
 
 gulp.task('clean', function() {
   del.sync(config.paths.sassCache);
-  del.sync(config.paths.dist + '**/*');
+  del.sync(config.paths.distCSS + '**/*');
+  del.sync(config.paths.distJS + '**/*');
 });

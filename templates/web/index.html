@@ -4,30 +4,31 @@
 {% block content %}
   <div class="wrapper">
     <header>
-      <div class="row">
+      <!-- <div class="row">
         <img src="{% static "img/logo-0.png" %}">
-      </div>
-      <div class="row">
-        <div class="container">
-          <nav>
-            <ul>
-              <li>
-                <a href="#">home</a>
-              </li>
-              <li>
-                <a href="#">about</a>
-              </li>
-              <li>
-                <a href="#">media</a>
-              </li>
-              <li>
-                <a href="#">contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+      </div> -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">about</a>
+          </li>
+          <li>
+            <a href="#">media</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <section class="hero">
+      <video autoplay>
+        <source src="{% static "video/sample.mp4" %}" type="video/mp4">
+      </video>
+    </section>
     <section class="content">
       <div class="row">
         <div class="col-md-6 image">
