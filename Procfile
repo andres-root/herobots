@@ -1,1 +1,1 @@
-web: gunicorn penelope.wsgi --log-file -
+web: gunicorn herobotscore.wsgi --log-file -
