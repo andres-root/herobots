@@ -36,7 +36,8 @@ header {
           font-size: 1rem; }
 
 section.separator {
-  height: 1rem; }
+  height: 4rem;
+  text-align: center; }
 
 section.content {
   height: 100vh; }
@@ -127,7 +128,8 @@ section.showcase {
 
 .grid-item img {
   display: block;
-  max-width: 100%; }
+  max-width: 100%;
+  min-width: 28rem; }
 
 section.order {
   height: 50rem;
