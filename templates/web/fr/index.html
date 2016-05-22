@@ -3,6 +3,11 @@
 {% load staticfiles %}
 {% block content %}
   <div class="wrapper">
+  {% if request.GET.success %}
+    <div class="alert alert-success">
+      <strong>Success!</strong> Indicates a successful or positive action.
+    </div>
+  {% endif %}
     <header>
       <!-- <div class="row">
         <img src="{% static "img/logo-0.png" %}">
@@ -30,9 +35,9 @@
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="#about">About</a></li>
-            <li><a href="#showcase">Products</a></li>
+            <li><a href="#showcae">Products</a></li>
             <li><a href="#inspiration">Inspiration</a></li>
-            <li><a class="waves-effect waves-light btn" href="/preorder/">Preorder</a></li>
+            <li><a class="waves-effect waves-light btn" href="/en/preorder/">Preorder</a></li>
             <li><a href="/">ES</a></li>
             <li><a href="/en">EN</a></li>
             <li><a href="/fr/">FR</a></li>
@@ -40,12 +45,12 @@
         </div>
         </nav>
     </header>
-    <section id="hero" class="hero">
+    <section class="hero">
       <video autoplay>
         <source src="{% static "video/sample.mp4" %}" type="video/mp4">
       </video>
     </section>
-    <section id="about" class="content">
+    <section class="content">
       <div class="row">         
         <div class="col-md-6 image">
           <img src="{% static "img/turtle-0.png" %}">
@@ -54,7 +59,11 @@
           <div class="row">
             <div class="col s12 m12">
               <div class="card-panel teal">
-                <span class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non quam ut dui convallis condimentum. Vivamus consectetur, lorem et placerat semper, lorem massa blandit mauris, eu dignissim odio felis aliquam enim. Quisque cursus aliquam magna malesuada efficitur. Donec molestie mauris lectus, non consectetur velit ultrices in. In consectetur porta leo eu pretium. Integer tristique ligula vitae ex ullamcorper elementum. Cras vel interdum nisi. Mauris nec pretium erat.
+                <span class="white-text">We are a company that creates bio-inspired robots based on species on danger of extinction, we give you the power to be a hero helping the world's fauna.
+
+We want to create a culture of environmental care and a generation of human superheroes!
+
+AquaBots is the product line of aquatic animals of Herobots where our first model is the loggerhead turtle, which is in danger of extinction and your contribution to our project will give a real turtle the opportonity to live.
                 </span>
               </div>
             </div>
@@ -64,7 +73,7 @@
     </section>
     <section class="separator">
     </section>
-    <section id="showcase" class="showcase">
+    <section class="showcase">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 item">
@@ -95,7 +104,7 @@
           </div>
         </div>
     </section>
-    <section id="inspiration" class="environment">
+    <section class="environment">
       <div class="row">
         <div class="col s12 m6">
           <div class="card">
@@ -137,9 +146,12 @@
           </div> -->
     </section>
 
-    <section id="order" class="order">
+    <section class="order">
       <img src="{% static "img/logo.gif" %}">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non quam ut dui convallis condimentum. Vivamus consectetur, lorem et placerat semper, lorem massa blandit mauris, eu dignissim odio felis aliquam enim. Quisque cursus aliquam magna malesuada efficitur.</p>
+      <p>If you want to be a hero and help the turtle Aminta , it is time to unite and pre - order it recalls one of every 1,000 loggerhead eggs reach adulthood ! The initial price of this Robot is 100 dollars and if you want to keep tracking ( tracking process animal rescued ) satellite 200 dollars!
+It is a AcuaBot with this first model !
+
+Process life of a turtle explained for kids!</p>
       <a class="waves-effect waves-light btn-large" href="preorder">Preorder</a>
       <!-- <form method="post" action="order">
         <label for="name">Name: </label>
@@ -156,34 +168,40 @@
         <input type="text" name="phone">
       </form> -->
     </section>
-    <section id="grid" class="grid">
+    <section class="separator">
+      <h3>There's still a lot of species to help</h3>
+    </section>
+   <section id="grid" class="grid">
       <div class="grid-sizer"></div>
-        <div class="grid-item">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+         <div class="grid-item">
+        <img src="{% static "img/species/2502090347_cocodrilo_orinoco_2.jpg" %}">
         </div>
         <div class="grid-item">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+        <img src="{% static "img/species/3108080440_monachusextinto.jpg" %}">
         </div>
         <div class="grid-item">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+        <img src="{% static "img/species/armadillo_gigante.jpg" %}">
         </div>
         <div class="grid-item">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+        <img src="{% static "img/species/oso_frontino.jpg" %}">
         </div>
         <div class="grid-item">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+        <img src="{% static "img/species/guacamaya.jpg" %}">
         </div>
         <div class="grid-item">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+        <img src="{% static "img/species/harlequinfrog.jpg" %}">
         </div>
         <div class="grid-item">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+        <img src="{% static "img/species/leopardus.jpg" %}">
         </div>
         <div class="grid-item">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+        <img src="{% static "img/species/micodenocheandino.jpg" %}">
         </div>
         <div class="grid-item">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+        <img src="{% static "img/species/monoaraña.gif" %}">
+        </div>
+        <div class="grid-item">
+        <img src="{% static "img/species/nutria_neotropical.jpg" %}">
         </div>
     </section>
   </div>
@@ -197,11 +215,27 @@
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Follow Us</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
+              <li>
+                <a href="#">
+                  <img src="{% static "img/fb.png" %}">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="{% static "img/im.png" %}">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="{% static "img/go.png" %}">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="{% static "img/yo.png" %}">
+                </a>
+              </li>
+            </ul>
         </div>
       </div>
     </div>
