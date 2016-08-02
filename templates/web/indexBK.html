@@ -1,0 +1,269 @@
+{% extends 'base.html' %}
+{% block title %} Herobots! {% endblock %}
+{% load staticfiles %}
+{% block content %}
+  <div class="wrapper">
+    <header>
+      <!-- <div class="row">
+        <img src="{% static "img/logo-0.png" %}">
+      </div> -->
+      <!-- <nav>
+        <ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">about</a>
+          </li>
+          <li>
+            <a href="#">media</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
+          </li>
+        </ul>
+      </nav> -->
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">
+            <img src="{% static "img/logo-light.png" %}">
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#showcase">Productos</a></li>
+            <li><a href="#inspiration">Inspiración</a></li>
+            <li><a class="waves-effect waves-light btn" href="/preordenar/">Preordenar</a></li>
+            <li><a href="/">ES</a></li>
+            <li><a href="/en">EN</a></li>
+            <li><a href="/fr/">FR</a></li>
+          </ul>
+        </div>
+        </nav>
+    </header>
+    <section class="hero">
+      <video autoplay loop>
+        <source src="{% static "video/turtlevideo.mp4" %}" type="video/mp4">
+      </video>
+    </section>
+    <section id="about" class="content">
+      <div class="row">         
+        <div class="col-md-6 image">
+          <img src="{% static "img/turtle-0.png" %}">
+        </div>
+        <div class="col-md-6 copy">
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card-panel teal">
+                <span class="white-text">Somos una compañía que crea robots bioinspirados en especies en peligro de extinción, queremos darle la posibilidad de ser héroe al niño o adulto que adquiera nuestro robot y darle el poder para ayudar el mundo cuidando nuestra fauna.
+
+                Queremos crear una cultura de cuidado del medio ambiente y una generación de humanos super héroes!
+
+                Los AquaBots, son la línea de producto de animales acuáticos de Herobots donde nuestro primer modelo es la tortuga CAGUAMA, la cual se encuentra en via de extinción y con la compra de tu robot estarás ayudando a una tortuga real a vivir.
+
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>          
+      </div>
+    </section>
+    <section class="separator">
+    </section>
+    <section class="showcase">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 item">
+            <a href="/preordenar/">
+              <img src="{% static "img/turtlewithputtext.png" %}">
+              <b class="copy">
+                <img src="{% static "img/textturtle.png" %}">
+              </b>
+            </a>
+          </div>
+          <div class="col-md-6 item">
+            <a href="/preordenar/">
+              <img src="{% static "img/perezososintexto.png" %}">
+              <b class="copy"><img src="{% static "img/textoperezaso.png" %}"></b>
+            </a>
+          </div>
+          <div class="col-md-6 item">
+            <a href="/preordenar/">
+              <img src="{% static "img/birdwithouttext.png" %}">
+              <b class="copy"><img src="{% static "img/textbird.png" %}"></b>
+            </a>
+          </div>
+          <div class="col-md-6 item">
+            <a href="/preordenar/">
+              <img src="{% static "img/plantswithouttext.png" %}">
+              <b class="copy"><img src="{% static "img/textoplantas.png" %}"></b>
+            </a>
+          </div>
+        </div>
+    </section>
+    <section id="inspiration" class="environment">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="{% static "img/amintaturtle.jpg" %}">
+              <span class="card-title">Aminta</span>
+            </div>
+            <div class="card-content">
+              <p>La tortuga viajera</p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.facebook.com/Aminta-La-Tortuguita-Viajera-789357437832345/">Fan Page</a>
+              <a href="http://www.seaturtle.org/tracking/index.shtml?tag_id=161179&full=1">Mapa Satelital</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <!-- <img src="{% static "img/turtle-1.jpg" %}"> -->
+              <iframe width="640" height="323" src="https://www.youtube.com/embed/UVvIiexOqoU" frameborder="0" allowfullscreen></iframe>
+              <span class="card-title">Ciclo de vida</span>
+            </div>
+            <div class="card-content">
+              <p>Así vive una tortuga marina</p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.facebook.com/Aminta-La-Tortuguita-Viajera-789357437832345/">Más información</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+          <!-- <div class="col-md-6 item">
+            <img class="img-circle" src="{% static "img/aminta.jpg" %}">
+          </div>
+          <div class="col-md-6 item">
+            <img class="img-circle" src="{% static "img/turtle-1.jpg" %}">
+          </div> -->
+    </section>
+
+    <section id="order" class="order">
+      <img src="{% static "img/logo.gif" %}">
+      <p>Si usted quiere ser un Héroe y ayudar la tortuga Aminta, es momento de unirse y pre-ordenarla, recuerda uno de cada 1000 huevos de la tortuga CAGUAMA llegan a la edad adulta! El precio inicial de este Robot es 100 dolares  y si quieres seguir el tracking (proceso de seguimiento del animal rescatado) satelital 200 dolares!
+Se un AcuaBot con este primer modelo!</p>
+      <a class="waves-effect waves-light btn-large" href="/preordenar/">Preordenar</a>
+      <!-- <form method="post" action="order">
+        <label for="name">Name: </label>
+        <input type="text" name="name">
+        <label for="name">Name: </label>
+        <select name="species">
+          <option value="turtle">Turtle</option>
+        </select>
+        <label for="animalname">Animalname: </label>
+        <input type="text" name="animalname">
+        <label for="email">Animalname: </label>
+        <input type="email" name="email">
+        <label for="phone">Animalname: </label>
+        <input type="text" name="phone">
+      </form> -->
+    </section>
+    <section class="separator">
+      <h3>There's still a lot of species to help</h3>
+    </section>
+    <section id="grid" class="grid">
+      <div class="grid-sizer"></div>
+         <div class="grid-item">
+        <img src="{% static "img/species/2502090347_cocodrilo_orinoco_2.jpg" %}">
+        </div>
+        <div class="grid-item">
+        <img src="{% static "img/species/3108080440_monachusextinto.jpg" %}">
+        </div>
+        <div class="grid-item">
+        <img src="{% static "img/species/armadillo_gigante.jpg" %}">
+        </div>
+        <div class="grid-item">
+        <img src="{% static "img/species/oso_frontino.jpg" %}">
+        </div>
+        <div class="grid-item">
+        <img src="{% static "img/species/guacamaya.jpg" %}">
+        </div>
+        <div class="grid-item">
+        <img src="{% static "img/species/harlequinfrog.jpg" %}">
+        </div>
+        <div class="grid-item">
+        <img src="{% static "img/species/leopardus.jpg" %}">
+        </div>
+        <div class="grid-item">
+        <img src="{% static "img/species/micodenocheandino.jpg" %}">
+        </div>
+        <div class="grid-item">
+        <img src="{% static "img/species/monoaraña.gif" %}">
+        </div>
+        <div class="grid-item">
+        <img src="{% static "img/species/nutria_neotropical.jpg" %}">
+        </div>
+    </section>
+  </div>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Bio-Inspiración</h5>
+          <p class="grey-text text-lighten-4">Hecho con amor en Bogotá, Colombia.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Síguenos</h5>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/HeroBots-248356065523116/">
+                  <img src="{% static "img/fb.png" %}">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/herobots.co/">
+                  <img src="{% static "img/im.png" %}">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="{% static "img/go.png" %}">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="{% static "img/yo.png" %}">
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2014 Copyright Herobots Inc.
+      <a class="grey-text text-lighten-4 right" href="#!">Términos y Condiciones</a>
+      </div>
+    </div>
+  </footer>
+  <!-- <footer>
+    <ul>
+      <li>
+        <a href="#">
+          <img src="{% static "img/fb.png" %}">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="{% static "img/tw.png" %}">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="{% static "img/go.png" %}">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="{% static "img/yo.png" %}">
+        </a>
+      </li>
+    </ul>
+    <p>Made with love in Bogotá</p>
+  </footer> -->
+{% endblock %}
